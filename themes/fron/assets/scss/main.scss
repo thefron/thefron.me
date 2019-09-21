@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 @import "../vendor/bulma-0.7.5/sass/utilities/_initial-variables.sass";
-// Override variables
 
+// Colors
 $background: $black-ter;
 $title-color: $white-ter;
 $text: $white;
+
+// Sizes
+$body-size: 16px;
 
 @import "../vendor/bulma-0.7.5/sass/utilities/_all.sass";
 @import "../vendor/bulma-0.7.5/sass/base/_all.sass";
