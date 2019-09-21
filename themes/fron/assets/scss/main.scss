@@ -6,10 +6,18 @@
 // Colors
 $background: $black-ter;
 $title-color: $white-ter;
-$text: $white;
+$text: $grey-lighter;
+$link: $grey-light;
+$link-hover: $white-ter;
+$code: $grey-light;
+$content-heading-color: $white-ter;
+$code-background: $grey-darker;
 
 // Sizes
 $body-size: 16px;
+
+$max-width: 720px;
+$container-offset: (8 * $gap);
 
 @import "../vendor/bulma-0.7.5/sass/utilities/_all.sass";
 @import "../vendor/bulma-0.7.5/sass/base/_all.sass";
@@ -20,4 +28,19 @@ $body-size: 16px;
 
 html, section {
   background-color: $background;
+}
+
+code {
+  border-radius: 5px;
+}
+
+.container {
+  max-width: $max-width;
+}
+
+.content {
+  img {
+    margin: $gap auto;
+    display: block;
+  }
 }

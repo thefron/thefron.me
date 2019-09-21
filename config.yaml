@@ -2,6 +2,7 @@ baseURL: "https://thefron.me/"
 languageCode: "ko-kr"
 title: "Thefron"
 theme: "fron"
+pygmentsCodeFences: true
 googleAnalytics: "UA-22237907-1"
 
 menu:
