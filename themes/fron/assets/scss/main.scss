@@ -44,3 +44,12 @@ code {
     display: block;
   }
 }
+
+.posts-group {
+  display: flex;
+}
+
+.post-item {
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+}
