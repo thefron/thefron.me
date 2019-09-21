@@ -2,6 +2,10 @@
 title: "Bundle Install Using Docker"
 url: /bundle-install-using-docker
 date: 2016-09-28T15:23:39+09:00
+tags:
+  - docker
+  - ruby
+  - bundler
 draft: false
 ---
 

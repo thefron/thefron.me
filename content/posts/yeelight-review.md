@@ -2,6 +2,9 @@
 title: "Yeelight Review"
 url: /yeelight-review
 date: 2017-03-21T23:43:02+09:00
+tags:
+  - yeelight
+  - IoT
 draft: false
 ---
 

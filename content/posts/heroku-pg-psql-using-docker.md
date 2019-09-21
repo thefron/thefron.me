@@ -2,6 +2,11 @@
 title: "Heroku Pg Psql Using Docker"
 url: /heroku-pg-psql-using-docker
 date: 2016-08-31T16:45:45+09:00
+tags:
+  - heroku
+  - docker
+  - postgres
+  - psql
 draft: false
 ---
 
