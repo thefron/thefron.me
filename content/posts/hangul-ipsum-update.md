@@ -1,5 +1,6 @@
 ---
 title: "Hangul Ipsum Update"
+url: /hangul-ipsum-update
 date: 2017-07-25T01:03:26+09:00
 draft: false
 ---
