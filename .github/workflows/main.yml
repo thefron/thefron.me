@@ -18,6 +18,9 @@ jobs:
         hugo-version: '0.58.3'
         extended: true
 
+    - name: Dependencies
+      run: npm install postcss-cli
+
     - name: Build
       run: hugo --gc --minify --cleanDestinationDir
 
