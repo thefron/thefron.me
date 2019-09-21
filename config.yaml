@@ -1,0 +1,19 @@
+baseURL: "https://thefron.me/"
+languageCode: "ko-kr"
+title: "Thefron"
+theme: "fron"
+googleAnalytics: "UA-22237907-1"
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About"
+      title: "blog section"
+      url: "/about/"
+      weight: -110
+
+    - identifier: "blog"
+      name: "Posts"
+      title: "blog section"
+      url: "/posts/"
+      weight: -110
