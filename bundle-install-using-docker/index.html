@@ -1,0 +1,32 @@
+<!doctype html><html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=https://thefron.me/scss/main.min.ac25bf3c9498992c54b4930c803c61de3de905e51b61dc0bd43bd4c09ea63908.css><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-22237907-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><body><nav class="navbar is-dark" role=navigation aria-label="main navigation"><div class=container><div class=navbar-brand><a class="navbar-item title is-3" href=/>Thefron</a></div><div class=navbar-menu><div class=navbar-end><a class=navbar-item href=https://thefron.me/about/>About</a><a class=navbar-item href=https://thefron.me/posts/>Posts</a></div></div></div></nav><div id=content><main class="post section"><div class=container><div class=post-info></p></div><article><h2 class="post-title title is-1"><a href=https://thefron.me/bundle-install-using-docker/>Bundle Install Using Docker</a></h2><div class="post-content content"><p>여러개의 ruby 프로젝트를 작업하다보면 rbenv, rvm 등으로 버전별, 프로젝트별 ruby와 gem들을(rvm의 경우 gemset) 관리해야하는 귀찮음이 생긴다.</p><p>지난번에 로컬에 프로젝트 관련 gem을 깔지 않기로 결심했으니 rubygems의 디펜던시를 기록하는 <code>Gemfile.lock</code> 파일 역시 docker를 이용해 업데이트를 하기로 했다.</p><p>아래와 같은 <code>Gemfile</code>이 있다고 하자.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=color:#75715e># Gemfile</span>
+ruby <span style=color:#e6db74>&#39;2.3.1&#39;</span>
+source <span style=color:#e6db74>&#39;https://rubygems.org&#39;</span>
+
+gem <span style=color:#e6db74>&#39;sinatra&#39;</span></code></pre></div><p>위 Gemfile에서 ruby 버전을 2.3.1로 명시하고 있기 때문에 rvm이든 rbenv든 이용해서 로컬에 해당 버전을 설치해 줘야 <code>bundle install</code>을 실행할 수 있다.
+하지만 docker를 이용하면 원하는 ruby 버전으로 one-off container를 만들어 현재 경로를 mount한 채로 <code>bundle install</code>을 실행하면 <code>Gemfile.lock</code>을 올바르게 업데이트 할 수 있다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>docker run --rm -v <span style=color:#e6db74>&#34;</span>$PWD<span style=color:#e6db74>&#34;</span>:/usr/src/app -w /usr/src/app ruby:2.3.1 bundle install --jobs <span style=color:#ae81ff>2</span></code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    sinatra (1.4.7)
+      rack (~&gt; 1.5)
+      rack-protection (~&gt; 1.4)
+      tilt (&gt;= 1.3, &lt; 3)
+    tilt (2.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sinatra
+
+RUBY VERSION
+   ruby 2.3.1p112
+
+BUNDLED WITH
+   1.13.1</code></pre></div><p>매번 커맨드를 타이핑하기 귀찮으니 아래와 같이 쉘 함수로 넣어놨다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#75715e># .zshrc</span>
+<span style=color:#66d9ef>function</span> docker_bundle_install <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+  docker run --rm -v <span style=color:#e6db74>&#34;</span>$PWD<span style=color:#e6db74>&#34;</span>:/usr/src/app -w /usr/src/app ruby:<span style=color:#e6db74>${</span>1<span style=color:#66d9ef>:-</span>2.3.1<span style=color:#e6db74>}</span> bundle install --jobs <span style=color:#ae81ff>4</span>
+<span style=color:#f92672>}</span></code></pre></div></div></article><hr><div class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83.0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><path d="M7 7V7z"/></svg><span class=tag><a href=https://thefron.me/tags/docker>docker</a></span><span class=tag><a href=https://thefron.me/tags/ruby>ruby</a></span><span class=tag><a href=https://thefron.me/tags/bundler>bundler</a></span></p></div><div id=comments class=thin><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"thefron"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></div></main></div></body></html>
