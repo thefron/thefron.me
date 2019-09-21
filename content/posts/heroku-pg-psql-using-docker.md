@@ -7,6 +7,7 @@ tags:
   - docker
   - postgres
   - psql
+comments: true
 draft: false
 ---
 

@@ -3,6 +3,7 @@ languageCode: "ko-kr"
 title: "Thefron"
 theme: "fron"
 pygmentsCodeFences: true
+disqusShortname: thefron
 googleAnalytics: "UA-22237907-1"
 
 menu:

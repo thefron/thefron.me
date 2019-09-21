@@ -5,6 +5,7 @@ date: 2017-07-25T01:03:26+09:00
 tags:
   - rails
   - ruby
+comments: true
 draft: false
 ---
 

@@ -6,6 +6,7 @@ tags:
   - docker
   - ruby
   - bundler
+comments: true
 draft: false
 ---
 
