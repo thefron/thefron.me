@@ -6,6 +6,9 @@ pygmentsCodeFences: true
 disqusShortname: thefron
 googleAnalytics: "UA-22237907-1"
 
+author:
+  name: Hoseong Hwang
+
 menu:
   main:
     - identifier: "about"
@@ -19,3 +22,12 @@ menu:
       title: "blog section"
       url: "/posts/"
       weight: -110
+
+params:
+  homeSubtitle: 개발로그 + 잡다
+
+  social:
+    - name: github
+      url: https://github.com/thefron
+    - name: twitter
+      url: https://twitter.com/thefron

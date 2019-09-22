@@ -15,8 +15,8 @@
             {{- range .Pages }}
               <li class="post-item">
                 <a href="{{.Permalink}}">
-                  <span class="post-title title is-3">{{.Title}}</span>
-                  <span class="post-day">{{ if .Site.Params.dateformShort }}{{ .Date.Format .Site.Params.dateformShort }}{{ else }}{{ .Date.Format "Jan 2"}}{{ end }}</span>
+                  <span class="post-title title is-5 is-spaced">{{.Title}}</span>
+                  <span class="post-day subtitle is-6">{{ if .Site.Params.dateformShort }}{{ .Date.Format .Site.Params.dateformShort }}{{ else }}{{ .Date.Format "Jan 2"}}{{ end }}</span>
                 </a>
               </li>
             {{- end }}

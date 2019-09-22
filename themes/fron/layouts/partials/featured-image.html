@@ -1,0 +1,6 @@
+{{ $img := (.Resources.ByType "image").GetMatch "images/*featured*" }}
+{{ with $img }}
+  <figure class="featured-image image">
+    <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+  </figure>
+{{ end }}
