@@ -24,7 +24,7 @@ menu:
       weight: -110
 
 params:
-  homeSubtitle: 개발로그 + 잡다
+  homeSubtitle: 개발로그 + 잡다한 것들
 
   social:
     - name: github
