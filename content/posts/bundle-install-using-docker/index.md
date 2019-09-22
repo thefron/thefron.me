@@ -1,7 +1,8 @@
 ---
-title: "Bundle Install Using Docker"
+title: "Docker를 이용한 bundle install 및 Gemfile.lock 업데이트하기"
 url: /bundle-install-using-docker
 date: 2016-09-28T15:23:39+09:00
+featured_image:
 tags:
   - docker
   - ruby

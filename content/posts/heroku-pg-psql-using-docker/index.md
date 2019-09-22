@@ -1,5 +1,5 @@
 ---
-title: "Heroku Pg Psql Using Docker"
+title: "로컬 postgres 없이 heroku pg:psql 커맨드 사용하기"
 url: /heroku-pg-psql-using-docker
 date: 2016-08-31T16:45:45+09:00
 tags:

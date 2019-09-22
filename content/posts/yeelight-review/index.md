@@ -1,5 +1,5 @@
 ---
-title: "Yeelight Review"
+title: "샤오미 Yeelight 스마트 전구 설치기"
 url: /yeelight-review
 date: 2017-03-21T23:43:02+09:00
 tags:

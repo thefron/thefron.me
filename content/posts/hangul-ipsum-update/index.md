@@ -1,5 +1,5 @@
 ---
-title: "Hangul Ipsum Update"
+title: "간만의 한글입숨 리뉴얼"
 url: /hangul-ipsum-update
 date: 2017-07-25T01:03:26+09:00
 tags:
