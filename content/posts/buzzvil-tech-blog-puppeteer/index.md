@@ -1,6 +1,7 @@
 ---
 title: "회사 테크 블로그 기고 - PhantomJS를 Headless Chrome(Puppeteer)로 전환하며"
 date: 2019-09-22T11:49:39+09:00
+description: 버즈빌 테크 블로그에 기고한 PhantomJS를 Headless Chrome(Puppeteer)로 전환하며 겪은 내용들을 정리해 보았습니다.
 tags:
   - docker
   - puppeteer
