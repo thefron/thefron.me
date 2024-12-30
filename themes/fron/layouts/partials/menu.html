@@ -1,4 +1,0 @@
-{{- $currentPage := . -}}
-{{ range .Site.Menus.main -}}
-  <a class="navbar-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-{{- end }}

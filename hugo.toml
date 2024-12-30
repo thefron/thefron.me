@@ -1,0 +1,66 @@
+baseURL = "https://thefron.me/"
+languageCode = "ko-kr"
+title = "Thefron"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Thefron"
+description = "개발로그 + 잡다한 것들"
+keywords = [ "Blog", "Portfolio", "Development" ]
+author = "Hoseong Hwang"
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+
+  [params.profileMode]
+  enabled = false
+
+  [params.homeInfoParams]
+  Title = "개발로그 + 잡다한 것들"
+  Content = "Welcome to my blog"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/thefron"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/thefron"
+
+[menu]
+  [[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 20
+
+[services]
+  [services.disqus]
+  shortname = "thefron"
+
+  [services.googleAnalytics]
+  ID = "G-E2TL4GL4QH"
