@@ -5,12 +5,7 @@ languageCode = "ko-kr"
 
 [params]
   homeSubtitle = "개발로그 + 잡다한 것들"
-
-  [params.author]
-    name = "Hoseong Hwang"
-
-  [params.assets]
-    disableHLJS = true
+  author = "Hoseong Hwang"
 
 [imaging]
   quality = 60
