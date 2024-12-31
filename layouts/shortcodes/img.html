@@ -1,0 +1,26 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $title := .Get "title" -}}
+{{- with $.Page.Resources.GetMatch $src -}}
+  {{- $options := "webp q80" -}}
+  {{- $large := .Resize (printf "1200x %s" $options) -}}
+  {{- $medium := .Resize (printf "800x %s" $options) -}}
+  {{- $small := .Resize (printf "500x %s" $options) -}}
+  <figure style="margin: 1.5em 0;">
+    <picture>
+      <source
+        type="image/webp"
+        srcset="{{ $small.RelPermalink }} 500w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+        sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, 1200px"
+      >
+      <img
+        src="{{ $medium.RelPermalink }}"
+        alt="{{ $alt }}"
+        loading="lazy"
+        decoding="async"
+        style="display: block; max-width: 100%; height: auto; margin: 0 auto;"
+      >
+    </picture>
+    {{ with $title }}<figcaption style="text-align: center; margin-top: 0.5em; color: #666;">{{ . }}</figcaption>{{ end }}
+  </figure>
+{{- end -}}

@@ -59,12 +59,12 @@ Knowledge Base 연동을 통해 단순히 Slack에서 LLM을 쓰는 걸 넘어�
 지원하면서 JTBD나 재무 모델링처럼 실질적인 비즈니스 요소들을 강조하는 점이 인상 깊었고, 실질적으로 우리에게 도움이 되는 프로그램이라는 인상을 받았다.
 프로그램에 합격하고 베이 지역에서 보낸 3개월은 정말 값진 시간이었다.
 
-![Techstars 2024 Oakland Class](./images/techstars.jpeg)
+{{< img src="techstars.jpeg" alt="Techstars 2024 Oakland Class" title="Techstars 2024 Oakland Class" >}}
 
 제품 메시지를 더 좁고 명확하게 다듬고, 주 단위로 KPI를 추적하면서 멘토들과 EIR들의 조언을 받아가며 개선했다.
 덕분에 이 기간 동안 매출은 4배나 늘었고, 다양한 고객과 멘토들한테 배운 인사이트로 회사의 방향도 더 선명해졌다.
 
-![Runbear Team in SF](./images/runbear-sf.jpeg)
+{{< img src="runbear-sf.jpeg" alt="Runbear Team in SF" title="Runbear Team in SF" >}}
 
 이 과정에서 제품 이름도 바뀌었다!
 Techstars 동료들이 한결같이 'PlugBear'보다는 우리 회사 이름이자 작년에 시도했던 MVP인 'Runbear'가 어감도 좋고 더 브랜드명처럼 들린다고 조언해줬고, 결국 중반에 이름을 바꾸기로 했다.
@@ -80,7 +80,7 @@ Techstars 동료들이 한결같이 'PlugBear'보다는 우리 회사 이름이�
 제품을 키워나가는 중요한 시기에 이렇게 좋은 동료들이 함께 해준 게 정말 고마웠다.
 여기에 Summer, Jeanie, Ali까지 합류하면서 7명의 팀이 됐고, 팀은 한층 더 단단해졌다.
 
-![Runbear Team in Seoul](./images/runbear-seoul.jpeg)
+{{< img src="runbear-seoul.jpeg" alt="Runbear Team in Seoul" title="Runbear Team in Seoul" >}}
 
 여전히 작은 팀이지만 매일매일이 정말 바쁘다.
 고객과 소통하고, 요구사항을 다듬고, 새로운 기능을 출시하고, 버그를 고치고, 장애를 해결하는 등 정말 저글링하는 것 같은 나날 속에서도 팀은 계속 성장하고 있다.
@@ -92,12 +92,12 @@ Techstars 동료들이 한결같이 'PlugBear'보다는 우리 회사 이름이�
 결혼하고 만 1년도 되지 않아 회사 일로 4개월이나 미국에 있어야 했고, 신혼인데도 긴 시간을 떨어져 있어야 했던 아내한테 미안한 마음이 크다.
 그래도 올해 초에는 드디어 법적인 부부가 되는 특별한 순간도 있었다.
 
-![구청에서 혼인신고](./images/marriage-registration.jpeg)
+{{< img src="marriage-registration.jpeg" alt="구청에서 혼인신고" title="구청에서 혼인신고" >}}
 
 귀국하고 얼마 지나지 않아 혼인신고를 했다.
 구청에서 서류 한 장으로 법적 부부가 된다는 게 어색하면서도 설레는 순간이었다.
 
-![댄스스포츠 대회](./images/dancesport.jpeg)
+{{< img src="dancesport.jpeg" alt="댄스스포츠 대회" title="댄스스포츠 대회" >}}
 
 연초에는 아마도 한국에서의 마지막이 될 댄스스포츠 대회에도 참가했다.
 실력 부족 이슈로 아내에게 짐이 된 것만 같지만 그래도 소중한 추억을 남겼다는데 의의를 두었다.
@@ -110,12 +110,12 @@ Techstars 프로그램을 마치고 귀국하자마자 미국 이주를 위한 �
 겨울옷을 포함한 이사짐은 해외 창고에서 대기 중이고, 이전 집의 가구들도 정리한 상태로 임시 숙소에서 생활하고 다달이 연장을 거듭하고 있다.
 이주 시기가 계속 미뤄지면서 이런 "임시" 상태가 길어지고 있다보니 불편함이 상당하다.
 
-![임시 숙소지만 뷰는 좋다](./images/episode.jpeg)
+{{< img src="episode.jpeg" alt="임시 숙소지만 뷰는 좋다" title="임시 숙소지만 뷰는 좋다" >}}
 
 특히 아내의 회사 업무랑 휴직 계획에도 영향을 주고 있어서 마음이 무겁다.
 함께 고생길에 흔쾌히 올라주기로 했는데 이렇게 불확실한 상황이 계속되는 게 미안할 따름이다.
 
-![새로운 친구들](./images/christmas.jpeg)
+{{< img src="christmas.jpeg" alt="새로운 친구들" title="새로운 친구들" >}}
 
 다행히도 임시로 지내고 있는 코리빙 스페이스에서 이웃들이랑 어울리면서 새로운 친구들을 만났고, 덕분에 불확실한 시기를 조금이나마 즐겁게 보낼 수 있었다.
 

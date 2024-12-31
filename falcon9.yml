@@ -1,3 +1,0 @@
-pipelines:
-  - env: prod
-  - env: dev
